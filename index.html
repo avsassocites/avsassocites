@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AVS Associates | Chartered Accountants & Company Secretaries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F5F2;--ink:#15201E;--mute:#5A6965;--green:#0C3532;--green2:#124741;--brass:#B08630;--line:#D3D9D5;--card:#FFFFFF;--on:#F4F5F2;--onm:#A9BDB8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1514;--ink:#E8ECEA;--mute:#9AA8A4;--green:#0A2B28;--green2:#103A35;--brass:#D3A650;--line:#243633;--card:#132120}}
+:root[data-theme="dark"]{--bg:#0C1514;--ink:#E8ECEA;--mute:#9AA8A4;--green:#0A2B28;--green2:#103A35;--brass:#D3A650;--line:#243633;--card:#132120}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;line-height:1.08;margin:0}
+a{color:inherit}:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.top{background:var(--green);color:var(--on)}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;flex-wrap:wrap}
+.logo{font:600 26px Newsreader,serif;text-decoration:none;letter-spacing:.01em}
+.logo small{display:block;font:500 12px "Hanken Grotesk",sans-serif;color:var(--onm);letter-spacing:0}
+nav{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--onm)}nav a:hover{color:var(--on)}
+nav button{background:var(--brass);color:#17130A}
+.btn,nav button{font:600 15px "Hanken Grotesk",sans-serif;border:0;border-radius:3px;padding:12px 20px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn{background:var(--brass);color:#17130A}
+.btn.ghost{background:none;border:1px solid var(--onm);color:var(--on)}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center;padding:64px 0 88px}
+.hero h1{font-size:clamp(42px,6.4vw,78px);letter-spacing:-.015em}
+.hero p{color:var(--onm);font-size:19px;max-width:48ch;margin:24px 0 30px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.cal{background:var(--green2);border:1px solid #ffffff1f;border-top:3px solid var(--brass);border-radius:4px;padding:26px}
+.cal h2{font-size:24px;color:var(--on)}.cal>p{font-size:14px;margin:4px 0 14px;color:var(--onm)}
+.cal div{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-top:1px solid #ffffff1a;font-size:15px}
+.cal b{font:500 20px Newsreader,serif;color:var(--brass);min-width:72px}
+.cal span{flex:1;color:var(--on)}.cal em{font-style:normal;color:var(--onm);font-size:13px}
+section{padding:80px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2.t{font-size:clamp(32px,4.6vw,52px);margin-bottom:12px}
+.lede{color:var(--mute);max-width:54ch;margin:0 0 40px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc{background:var(--bg);padding:30px 28px}
+.svc h3{font-size:26px;margin-bottom:4px}.svc .s{color:var(--brass);font-size:14px;font-weight:500;margin-bottom:16px}
+.svc ul{margin:0;padding:0;list-style:none}.svc li{padding:5px 0 5px 18px;position:relative;font-size:15.5px;border-top:1px solid var(--line)}
+.svc li:before{content:"";position:absolute;left:0;top:.95em;width:8px;height:2px;background:var(--brass)}
+.dark{background:var(--green);color:var(--on)}.dark .lede{color:var(--onm)}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 40px}.p .d{color:var(--on);font-size:16px;margin-top:10px;max-width:46ch}.p .r{color:var(--brass);font-weight:500;font-size:14px}.svc.wide{grid-column:1/-1}.svc.wide ul{columns:3;column-gap:32px}.svc.wide li{break-inside:avoid}
+.p{border-top:3px solid var(--brass);padding-top:18px}
+.av{width:64px;height:64px;border-radius:50%;background:var(--green2);border:1px solid var(--brass);color:var(--brass);display:grid;place-items:center;font:500 22px Newsreader,serif;margin-bottom:16px}
+.p h3{font-size:24px}.p p{margin:6px 0 0;color:var(--onm);font-size:15px}
+.cta{text-align:center;padding:80px 0}.cta h2{font-size:clamp(32px,4.6vw,52px);margin-bottom:14px}
+.cta p{color:var(--mute);margin:0 auto 28px;max-width:46ch}
+.cta .btn{background:var(--green);color:var(--on)}
+footer{background:var(--green);color:var(--onm);padding:28px 0;font-size:14px}
+.tab{position:fixed;right:0;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:100% 100%;margin-right:0;background:var(--brass);color:#17130A;border:0;padding:11px 22px;font:600 15px "Hanken Grotesk",sans-serif;border-radius:4px 4px 0 0;cursor:pointer;z-index:20;right:0}
+.dr{position:fixed;inset:0;z-index:30;pointer-events:none}
+.dr .sh{position:absolute;inset:0;background:#0008;opacity:0;transition:opacity .25s}
+.dr .pn{position:absolute;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--card);color:var(--ink);padding:max(28px,env(safe-area-inset-top,0px)) 28px 28px;transform:translateX(100%);transition:transform .3s;overflow:auto;border-left:3px solid var(--brass)}
+.dr.o{pointer-events:auto}.dr.o .sh{opacity:1}.dr.o .pn{transform:none}
+.pn h2{font-size:30px}.pn>p{color:var(--mute);margin:6px 0 20px;font-size:15px}
+.x{position:absolute;top:14px;right:16px;background:none;border:0;font-size:28px;color:var(--ink);cursor:pointer;line-height:1}
+form{display:grid;gap:12px}label{display:grid;gap:5px;font-weight:500;font-size:14.5px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:3px;padding:11px 12px;width:100%}
+textarea{min-height:96px;resize:vertical}
+form .btn{background:var(--green);color:var(--on);width:100%;margin-top:4px}
+.ok{font-size:14px;color:var(--mute)}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding:44px 0 64px}.grid{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.svc.wide ul{columns:2}}@media (max-width:600px){.grid,.team{grid-template-columns:1fr}.svc.wide ul{columns:1}nav a{display:none}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dr .sh,.dr .pn{transition:none}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+<div class="bar"><a class="logo" href="#top">AVS Associates<small>Chartered Accountants &amp; Company Secretaries</small></a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#team">Founders</a><a href="#contact">Contact</a><button type="button" data-open>Enquiry</button></nav></div>
+<div class="hero" id="top">
+<div><h1>Tax, audit and company law under one roof.</h1>
+<p>Income tax, GST, ROC, listed and unlisted company compliance, and statutory audit, handled by one team of founders.</p>
+<div class="btns"><button class="btn" type="button" data-open>Send an enquiry</button><a class="btn ghost" href="#services">See all services</a></div></div>
+<aside class="cal" aria-label="Recurring due dates"><h2>Every month, on time</h2><p>Recurring due dates we track for you (indicative)</p>
+<div><b>7th</b><span>TDS / TCS deposit</span><em>Income tax</em></div>
+<div><b>11th</b><span>GSTR-1 (monthly filers)</span><em>GST</em></div>
+<div><b>20th</b><span>GSTR-3B (monthly filers)</span><em>GST</em></div>
+<div><b>15th</b><span>Advance tax: Jun, Sep, Dec, Mar</span><em>Income tax</em></div></aside>
+</div></div></div>
+
+<main>
+<section id="services"><div class="wrap">
+<h2 class="t">What we handle</h2><p class="lede">Every recurring filing and every one-time requirement, tracked by one team.</p>
+<div class="grid">
+<div class="svc"><h3>Income tax</h3><div class="s">Individuals, firms, companies, trusts</div><ul><li>Return filing</li><li>Tax planning, advance tax</li><li>TDS and TCS returns</li><li>Notices, assessments, appeals</li><li>Tax audit (Form 3CD)</li><li>Form 15CA / 15CB</li></ul></div>
+<div class="svc"><h3>GST</h3><div class="s">Registration to appeals</div><ul><li>Registration and amendments</li><li>Monthly and quarterly returns</li><li>Annual return, reconciliation</li><li>Refund claims</li><li>Notices, replies, appeals</li><li>GST audit support</li></ul></div>
+<div class="svc"><h3>ROC and secretarial</h3><div class="s">Companies and LLPs</div><ul><li>Incorporation</li><li>Annual ROC filings</li><li>Director KYC and changes</li><li>Board and general meetings</li><li>Statutory registers</li><li>Share capital, FEMA filings</li></ul></div>
+<div class="svc"><h3>Listed companies</h3><div class="s">SEBI and stock exchange</div><ul><li>SEBI LODR periodic filings</li><li>Shareholding pattern</li><li>Exchange disclosures</li><li>Insider trading regulations</li><li>Secretarial audit</li><li>Compliance certificates</li></ul></div>
+<div class="svc"><h3>Unlisted companies</h3><div class="s">Private and public companies</div><ul><li>Companies Act calendar</li><li>Annual accounts and returns</li><li>Related party disclosures</li><li>Auditor appointment filings</li><li>Compliance health check</li></ul></div>
+<div class="svc"><h3>Statutory audit</h3><div class="s">Assurance and certification</div><ul><li>Statutory audit</li><li>Internal audit</li><li>Audit-related compliance</li><li>Financial statements</li><li>Bookkeeping, accounting</li><li>Certifications</li></ul></div>
+<div class="svc wide"><h3>Trademark</h3><div class="s">Protect your brand name and logo</div><ul><li>Trademark search</li><li>Application filing</li><li>Objection replies and hearings</li><li>Opposition matters</li><li>Renewal</li><li>Assignment and transfer</li></ul></div>
+</div></div></section>
+
+<section id="team" class="dark"><div class="wrap">
+<h2 class="t">Our founders</h2><p class="lede">Four founders, one firm. Every client works with a founder directly.</p>
+<div class="team">
+<div class="p"><div class="av" aria-hidden="true">VS</div><h3>Vishal Soni</h3><p class="r">Founder</p><p class="d">Core secretarial work, XBRL filing and legal advisory for companies.</p></div>
+<div class="p"><div class="av" aria-hidden="true">AC</div><h3>Amit Chulet</h3><p class="r">Co-founder</p><p class="d">Core secretarial work, run for hassle-free, on-time compliance.</p></div>
+<div class="p"><div class="av" aria-hidden="true">AS</div><h3>Alok Sharma</h3><p class="r">Co-founder</p><p class="d">Listed company compliance and the secretarial work around it.</p></div>
+<div class="p"><div class="av" aria-hidden="true">AK</div><h3>CA Anirudh Khandelwal</h3><p class="r">Co-founder</p><p class="d">Chartered Accountant for audit and taxation, with deep expertise in GST.</p></div>
+</div></div></section>
+
+<section id="contact" class="cta"><div class="wrap">
+<h2>Need a filing, audit or advice?</h2><p>Tell us what you need. A founder replies within one working day.</p>
+<button class="btn" type="button" data-open>Send an enquiry</button>
+<p class="ok" style="margin-top:26px">Phone: [add number] &nbsp; Email: [add email] &nbsp; Office: [add address]</p>
+</div></section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="y"></span> AVS Associates. All rights reserved.</div></footer>
+
+<button class="tab" type="button" data-open aria-label="Open enquiry form">Enquiry</button>
+<div class="dr" id="dr" aria-hidden="true"><div class="sh" data-close></div>
+<div class="pn" role="dialog" aria-modal="true" aria-labelledby="dt"><button class="x" type="button" data-close aria-label="Close">&times;</button>
+<h2 id="dt">Send an enquiry</h2><p>Tell us what you need. We reply within one working day.</p>
+<form id="f">
+<label>Your name<input name="n" required autocomplete="name"></label>
+<label>Phone<input name="p" type="tel" required autocomplete="tel"></label>
+<label>Email<input name="e" type="email" autocomplete="email"></label>
+<label>Service needed<select name="s"><option>Income tax</option><option>GST</option><option>ROC and secretarial</option><option>Listed company compliance</option><option>Unlisted company compliance</option><option>Statutory audit</option><option>Trademark</option><option>Other</option></select></label>
+<label>Message<textarea name="m"></textarea></label>
+<button class="btn" type="submit">Send enquiry</button><p class="ok" id="out" role="status"></p>
+</form></div></div>
+
+<script>
+var dr=document.getElementById('dr'),last;
+function op(){last=document.activeElement;dr.classList.add('o');dr.setAttribute('aria-hidden','false');setTimeout(function(){dr.querySelector('input').focus()},50)}
+function cl(){dr.classList.remove('o');dr.setAttribute('aria-hidden','true');if(last)last.focus()}
+document.querySelectorAll('[data-open]').forEach(function(b){b.addEventListener('click',op)});
+document.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',cl)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+document.getElementById('y').textContent=new Date().getFullYear();
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+document.getElementById('out').textContent='Thank you. A founder will contact you within one working day.';this.reset()});
+</script>
+</body>
+</html>
